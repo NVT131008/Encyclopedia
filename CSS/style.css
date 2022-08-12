@@ -1,0 +1,30 @@
+.container {
+  margin: auto;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+}
+
+.input-wrapper input {
+  border: 1px solid #dbdbdb;
+  padding: 10px 15px;
+  border-radius: 5px;
+  width: 50%;
+  outline: none;
+}
+
+.header {
+  background: rgb(13, 13, 153);
+  border: 1px solid gray;
+  border-radius: 5px;
+  width: 80%;
+  height: 64px;
+  line-height: 64px;
+  display: flex;
+  justify-content: center;
+}
+
+.search-query {
+  height: 30%;
+  width: 50%;
+}
