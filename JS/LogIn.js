@@ -1,3 +1,5 @@
+
+
 const loginForm = document.getElementById("login-form");
 const redirectToRegister = document.getElementById("redirect-to-register")
 
@@ -26,7 +28,7 @@ loginForm.addEventListener("submit", (event) => {
       console.log(response);
 
       ///// đi vào trang chủ
-      window.location.href = 'index.html'
+      window.location.href = 'Mainpage.html'
     }
     catch (err) {
       // alert("Err")

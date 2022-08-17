@@ -1,4 +1,7 @@
-const firebaseApp = firebase.initializeApp({ /* Firebase config */ });
+const firebaseApp = firebase.initializeApp({
+   /* Firebase config */ 
+  
+  });
 const database = firebaseApp.firestore();
 const auth = firebaseApp.auth();
 

@@ -11,24 +11,42 @@
 <body>
   <div id="container-main-page" class="container">
     <div class="header">
-      <input name="query" type="text" placeholder="Search Encyclopedia..." class="search-query" autocomplete="off">
+      <div class="search-wrapper">
+        <label for="search">Search</label>
+        <input name="searchBar" id="searchBar" type="text" placeholder="Search Encyclopedia..." autocomplete="off">
+      </div>
       <nav></nav>
     </div>
     <div class="body">
-      <div id="top-page">
-        <div>Top page</div>
-        <div>There's nothing inside right now.</div>
+      <div class="form-group">
+        <div class="link" id="top-page">
+          <div>Top page</div>
+          <div>There's nothing inside right now.</div>
+        </div>
+        <div class="link" id="newest-page">
+          <div>Newest page</div>
+          <div>There's nothing inside right now.</div>
+        </div>
+        <div class="link" id="did-you-know">
+          <div>Did you know...?</div>
+          <div>There's nothing inside right now.</div>
+        </div>
       </div>
-      <div id="newest-page">
-        <div>Newest page</div>
-        <div>There's nothing inside right now.</div>
-      </div>
-      <div id="did-you-know">
-        <div>Did you know...?</div>
-        <div>There's nothing inside right now.</div>
+      <div class="subject-card">
+        <button class="s1" id="Math">Math</button>
+        <button class="s1" id="Literature">Literature</button>
+        <button class="s1" id="Music">Music</button>
+        <button class="s1" id="Physics">Physics</button>
+        <button class="s1" id="Biology">Biology</button>
+        <button class="s1" id="Art">Art</button>
+        <button class="s1" id="Geography">Geography</button>
+        <button class="s1" id="Social-studies">Social studies</button>
+        <button class="s1" id="Foreign-Languages">Foreign languages</button>
+        <button class="s1" id="Physical-education">Physical education</button>
       </div>
     </div>
   </div>
+  <script src="../JS/query.js"></script>
   <script src="../JS/Mainpage.js"></script>
 </body>
 </html>
