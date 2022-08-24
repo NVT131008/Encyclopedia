@@ -23,30 +23,34 @@
         <input name="searchBar" id="searchBar" type="text" placeholder="Search Encyclopedia..." autocomplete="off">
       </div>
     </div>
-    <div id="log-in-header">
-      <h1>Welcome!</h1>
+
+    <div class="log-in-body">
+      <div id="log-in-header">
+        <h1>Welcome!</h1>
+      </div>
+      <form id="log-in-form">
+        <div class="input-wrapper">
+          <label for=""></label>
+          <br>
+          <input type="text" name="Username" placeholder="Username...">
+          <br>
+          <div class="errorMessage"></div>
+        </div>
+        <div class="input-wrapper">
+          <label for=""></label>
+          <br>
+          <input type="text" name="Password" placeholder="Password...">
+          <br>
+          <div class="errorMessage"></div>
+        </div>
+        <div class="form-action">
+          <span class="cursor" id="redirect-to-register">Don't have an account? Sign Up.</span>
+          <br>
+          <button class="btn" type="submit">Log in</button>
+        </div>
+      </form>
     </div>
-    <form id="log-in-form">
-      <div class="input-wrapper">
-        <label for=""></label>
-        <br>
-        <input type="text" name="Username" placeholder="Username...">
-        <br>
-        <div class="errorMessage"></div>
-      </div>
-      <div class="input-wrapper">
-        <label for=""></label>
-        <br>
-        <input type="text" name="Password" placeholder="Password...">
-        <br>
-        <div class="errorMessage"></div>
-      </div>
-      <div class="form-action">
-        <span class="cursor" id="redirect-to-register">Don't have an account? Sign Up.</span>
-        <br>
-        <button class="btn" type="submit">Log in</button>
-      </div>
-    </form>
+
   </div>
   <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-auth.js"></script>

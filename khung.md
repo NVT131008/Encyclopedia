@@ -22,3 +22,12 @@
         a non-profit organization.
       </p>
     </div> -->
+
+* Khung navi
+<!-- <div class="nav-container">
+        <div class="nav" id="mainPage">Main Page</div>
+        <div class="nav" id="createPage">Create page</div>
+        <div class="nav" id="modifyPage">Modify page</div>
+        <div class="nav" id="aboutUs">About us</div>
+        <div class="nav" id="currentEvents">Current events</div>
+      </div> -->

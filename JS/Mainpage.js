@@ -33,3 +33,7 @@ aboutUs.addEventListener('click', () => {
 currentEvents.addEventListener('click', () => {
   location.href = "../HTML/Events.html"
 })
+
+subject9.addEventListener('click', () => {
+  location.href = "../HTML/Subject.html"
+})

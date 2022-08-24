@@ -4,6 +4,7 @@
   display: grid;
   grid-template-rows: auto;
   grid-gap: 20px;
+  background-color: blue;
 }
 
 .footer {
@@ -48,4 +49,21 @@
 .header > .nav-header > a {
   color: white;
   text-decoration: none;
+}
+
+
+.body > .nav-container {
+  margin: 0;
+  grid-area: sidebar;
+  border-radius: 10px;
+  height: 100%;
+  width: 50%;
+  background-color: gray;
+}
+
+.body > .nav-container > .nav {
+  text-align: center;
+  font-size: 1.25em;
+  color: rgb(253, 253, 253);
+  cursor: pointer;
 }
