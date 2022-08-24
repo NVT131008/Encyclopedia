@@ -11,7 +11,10 @@
   background-color: rgb(1, 1, 63);
   left: 0;
   bottom: 0;
-  
+}
+
+.footer > p {
+  color: rgb(238, 234, 234);
 }
 
 .input-wrapper input {
@@ -25,16 +28,24 @@
 .header {
   background: rgb(1, 1, 63);
   border: 1px solid gray;
-  border-radius: 5px;
   width: 100%;
   height: 50px;
   line-height: 64px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 
-.search-query {
-  height: 30%;
+.header > .search-query {
   width: 50%;
-  border-radius: 5px;
+  height: 30%;
+}
+
+.header > .nav-header {
+  display: grid;
+  grid-template-columns: 2fr 2fr; 
+}
+
+.header > .nav-header > a {
+  color: white;
+  text-decoration: none;
 }

@@ -10,7 +10,8 @@
   grid-area: sidebar;
   border-radius: 10px;
   height: 100%;
-  border: 1px solid #c1c1c1;
+  background-color: blue;
+  border: 0.5px solid #c1c1c1;
 }
 
 .body > .body1 > .nav {
