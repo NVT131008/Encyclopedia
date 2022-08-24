@@ -1,6 +1,6 @@
 const firebaseApp = firebase.initializeApp({
    /* Firebase config */ 
-  
+    
   });
 const database = firebaseApp.firestore();
 const auth = firebaseApp.auth();
@@ -15,7 +15,7 @@ redirectToLogin.addEventListener('click', () => {
 
 registerForm.addEventListener("submit", (event) => {
   event.preventDefault(); // ngăn sự kiện tải lại mặc định cho trình duyệt
-  const dataRegistration = {
+  const dataRegister = {
     username: registerForm.Username.value,
     password: registerForm.Password.value,
     confirmPassword: registerForm.Confirmpassword.value,
@@ -24,5 +24,24 @@ registerForm.addEventListener("submit", (event) => {
 
   location.href = '../HTML/LogIn.html'
 
-  
+  const register = async (data) => {
+    try {
+      await firebase.auth().createUserWithEmailAndPassword(data.email, data.password)
+      firebase.auth().currentUser.sendEmailVerification();
+      alert("The email has been registered, please check your email");
+      location.href = "../login.html"
+    }
+    catch (err) {
+      console.log(err);
+      alert(err.message);
+    }
+  }
+
+
+  // Gọi hàm
+  register(dataRegister);
+
 })
+
+
+
