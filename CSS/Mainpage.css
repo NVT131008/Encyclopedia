@@ -1,12 +1,4 @@
-.body {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-areas: "sidebar content";
-  grid-template-rows: auto auto;
-  align-items: center;
-}
-
-.body > .body2 {
+.body > .main-page-content {
   margin: 0;
   display: grid;
   width: 100%;
@@ -14,51 +6,47 @@
   background-color: gray;
 }
 
-.body > .body2 > .subject-card {
+.body > .main-page-content > .subject-card {
   display: grid;
   grid-gap: 5px;
-  grid-template-columns: auto-repeat(150px);
-  border: 3px solid #ccc;
+  grid-template-columns: repeat(2, 1fr);
+  border: 1px solid black;
   border-radius: 10px;
-  width: 100%;
   align-items: center;
   text-align: center;
 }
-.body > .body2 > .subject-card > .subject {
-  display: grid;
-  border: 1px solid #c1c1c1;
-  grid-template-columns: auto;
+.body > .main-page-content > .subject-card > .subject {
+  border: 1px solid black;
+  text-align: center;
   border-radius: 1px;
-  font-size: 1.25em;
+  font-size: 2em;
   cursor: pointer;
+  background-color: lightgray;
   color: black;
 }
 
-.body > .body2 > .subject-card > .subject > #subject9 {
-  width: 100%;
-}
-
-.body > .body2 > .form-group {
+.body > .main-page-content > .form-group {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  border: 3px solid #ccc;
+  grid-template-columns: auto auto;
+  grid-gap: 30px;
+  border: 1px solid black;
   border-radius: 10px;
   width: 100%;
 }
 
-.body > .body2 > .form-group > .link {
-  border: 2px solid #ccc;
+.body > .main-page-content > .form-group > .link {
+  border: 1px solid black;
   border-radius: 3px;
   text-align: center;
   display: grid;
-  grid-template-rows: 1fr 4fr;
+  grid-template-rows: 1fr 10fr;
 }
 
-.body > .body2 > .form-group > .link > .title {
-  border: 2px solid #ccc;
+.body > .main-page-content > .form-group > .link > .title {
+  border: 1px solid black;
   border-radius: 3px;
 }
 
-.body > .body2 > .form-group > .link > .content {
+.body > .main-page-content > .form-group > .link > .content {
   color: #302a2a
 }

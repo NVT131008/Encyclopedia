@@ -11,57 +11,83 @@
 <body>
   <div id="register-container" class="container">
 
-    <div class="header">
-      <input name="query" type="text" placeholder="Search Encyclopedia..." class="search-query" autocomplete="off">
+    <header>
       <nav class="nav-header">
         <a href="../HTML/LogIn.html">Log In</a>
         <a href="../HTML/SignUp.html">Sign Up</a>
       </nav>
-    </div>
+      <div class="search-wrapper">
+        <label for="search">Search</label>
+        <input name="searchBar" id="searchBar" type="text" placeholder="Search Encyclopedia..." autocomplete="off">
+      </div>
+    </header>
 
-    <div id="register-header">
-      <h1>Sign up</h1>
-    </div>
+    <div class="body">
+      <div class="nav-container">
+        <div class="nav" id="mainPage">Main Page</div>
+        <div class="nav" id="createPage">Create page</div>
+        <div class="nav" id="modifyPage">Modify page</div>
+        <div class="nav" id="aboutUs">About us</div>
+        <div class="nav" id="currentEvents">Current events</div>
+      </div>
 
-    <form id="register-form">
-      <div class="input-wrapper">
-        <label for="username">Username</label>
-        <br>
-        <input type="text" name="Username" placeholder="Username...">
-        <br>
-        <div class="errorMessage" id="username-error"></div>
-      </div>
-      <div class="input-wrapper">
-        <label for="password">Password</label>
-        <br>
-        <input type="password" name="Password" placeholder="Password...">
-        <br>
-        <div class="errorMessage" id="password-error"></div>
-      </div>
-      <div class="input-wrapper">
-        <label for="re-password">Confirm Password</label>
-        <br>
-        <input type="password" name="Confirmpassword" placeholder="Confirm Password...">
-        <br>
-        <div class="errorMessage" id="re-password-error"></div>
-      </div>
-      <div class="input-wrapper">
-        <label for="email">Email</label>
-        <br>
-        <input type="email" name="Email" placeholder="Email...">
-        <br>
-        <div class="errorMessage" id="email-error"></div>
-      </div>
-      <div class="form-action">
-        <span class="cursor" id="redirect-to-login">Already have an account? Log in</span>
-        <button class="btn" id="register-btn" type="submit">Register</button>
-      </div>
-    </form>
+      <form id="register-form">
+        <div id="register-header">
+          <h1>Sign up</h1>
+        </div>
+        <div class="input-wrapper">
+          <label for="username">Username</label>
+          <br>
+          <input type="text" name="Username" placeholder="Username...">
+          <br>
+          <div class="errorMessage" id="username-error"></div>
+        </div>
+        <div class="input-wrapper">
+          <label for="password">Password</label>
+          <br>
+          <input type="password" name="Password" placeholder="Password...">
+          <br>
+          <div class="errorMessage" id="password-error"></div>
+        </div>
+        <div class="input-wrapper">
+          <label for="re-password">Confirm Password</label>
+          <br>
+          <input type="password" name="Confirmpassword" placeholder="Confirm Password...">
+          <br>
+          <div class="errorMessage" id="re-password-error"></div>
+        </div>
+        <div class="input-wrapper">
+          <label for="email">Email</label>
+          <br>
+          <input type="email" name="Email" placeholder="Email...">
+          <br>
+          <div class="errorMessage" id="email-error"></div>
+        </div>
+        <div class="form-action">
+          <span class="cursor" id="redirect-to-login">Already have an account? Log in</span>
+          <br>
+          <button class="btn" id="register-btn" type="submit">Register</button>
+        </div>
+      </form>
+    </div>
+    <footer>
+      <p>
+        Text is available under the 
+        Creative Commons Attribution-ShareAlike License 3.0; 
+        additional terms may apply. 
+        By using this site, you agree to the Terms of Use and Privacy Policy. 
+        Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., 
+        a non-profit organization.
+      </p>
+    </footer>
+    
   </div>
   <script src="https://www.gstatic.com/firebasejs/9.9.2/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.9.2/firebase-firestore-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.9.2/firebase-auth-compat.js"></script>
   <script src="../JS/Controller.js"></script>
   <script src="../JS/SignUp.js"></script>
+  <script src="../JS/init.js"></script>
+  <script src="../JS/script.js"></script>
 </body>
 </html>

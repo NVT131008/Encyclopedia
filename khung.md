@@ -1,6 +1,6 @@
 * Khung header
 
-<!--     <div class="header">
+<!--     <header>
       <nav class="nav-header">
         <a href="../HTML/LogIn.html">Log In</a>
         <a href="../HTML/SignUp.html">Sign Up</a>
@@ -9,10 +9,10 @@
         <label for="search">Search</label>
         <input name="searchBar" id="searchBar" type="text" placeholder="Search Encyclopedia..." autocomplete="off">
       </div>
-    </div> -->
+    </header> -->
 
 * Khung footer
-<!-- <div class="footer">
+<!-- <footer>
       <p>
         Text is available under the 
         Creative Commons Attribution-ShareAlike License 3.0; 
@@ -21,7 +21,7 @@
         Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., 
         a non-profit organization.
       </p>
-    </div> -->
+    </footer> -->
 
 * Khung navi
 <!-- <div class="nav-container">

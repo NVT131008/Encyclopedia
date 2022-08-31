@@ -1,4 +1,4 @@
-const init = () => {
+export const init = () => {
 
   console.log("Window loaded");
 

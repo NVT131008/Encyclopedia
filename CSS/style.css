@@ -1,20 +1,19 @@
 .container {
-  margin: auto;
+  margin: 0;
   width: 100vw;
   display: grid;
   grid-template-rows: auto;
-  grid-gap: 20px;
-  background-color: blue;
+  background-color: white;
 }
 
-.footer {
+footer {
   width: 100%;
-  background-color: rgb(1, 1, 63);
+  background-color: rgb(61, 61, 61);
   left: 0;
   bottom: 0;
 }
 
-.footer > p {
+footer > p {
   color: rgb(238, 234, 234);
 }
 
@@ -26,8 +25,8 @@
   outline: none;
 }
 
-.header {
-  background: rgb(1, 1, 63);
+header {
+  background: rgb(59, 57, 57);
   border: 1px solid gray;
   width: 100%;
   height: 50px;
@@ -36,21 +35,28 @@
   justify-content: space-around;
 }
 
-.header > .search-query {
+header > .search-query {
   width: 50%;
   height: 30%;
 }
 
-.header > .nav-header {
+header > .nav-header {
   display: grid;
   grid-template-columns: 2fr 2fr; 
 }
 
-.header > .nav-header > a {
+header > .nav-header > a {
   color: white;
   text-decoration: none;
 }
 
+.body {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas: "sidebar content";
+  grid-template-columns: auto auto;
+  align-items: center;
+}
 
 .body > .nav-container {
   margin: 0;
@@ -66,4 +72,14 @@
   font-size: 1.25em;
   color: rgb(253, 253, 253);
   cursor: pointer;
+}
+
+button {
+  background-color: antiquewhite;
+  width: 150px;
+  height: 50px;
+}
+
+.form-action {
+  padding: 50px;
 }

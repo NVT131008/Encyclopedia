@@ -1,5 +1,3 @@
-
-
 const loginForm = document.getElementById("login-form");
 const redirectToRegister = document.getElementById("redirect-to-register")
 

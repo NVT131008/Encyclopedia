@@ -1,5 +1,4 @@
-#register-container {
-  width: 100vh;
-  display: flex;
-  justify-content: center;
+.body > #register-form {
+  align-items: center;
+  text-align: center;
 }
